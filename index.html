@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
 
 </head>
@@ -13,42 +16,64 @@
 
     
     <section class="app-space">
+
+
+        <!--Cabecera/logo -->
         <header>
-            <section class="logo-contenedor">
-                <img class="imagen-logo" src="imagenes/Logo.png" alt="Logo de la app">
+            
+             <img class="imagen-logo" src="imagenes/Logo.png" alt="Logo de la app">
                 
-            </section>
         </header>
 
-        <section class="lado-izq">
-            <h1>Lado izquierdo</h1>
-            <fieldset>
-                
-                <textarea name="textoIzq" id="textoIzq" class="areaDeTexto"  rows="10" cols="50" placeholder="Introduzca el texto"></textarea>
-                
-            </fieldset>
 
-            <section class="TC">
-                <p>Solo letras minusculas y sin acentos</p>
-            </section>
-            <section class="botones-izq">
-                <p>Botones izquierda</p>
-                <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
 
-                <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+
+        <main>
+
+            <!--Lado Izquierdo-->
+            <section class="izquierda">
+                    <textarea id="areaDeTextoizq" cols="65" rows="10" placeholder="Introduzca el texto" pattern="[a-z ]*"
+                    oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
+
+                    <section class="TC">
+                        <h5>Solo letras minusculas y sin acentos</h5>
+                    </section>
+                    
+                    <section class="botones-izq">
+                    
+                        <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+
+                        <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                    </section>
             </section>
-        </section>
 
         
 
-        <section class="lado-der">
-            <h1>Lado derecho</h1>
-            <section class="boton-copiar">
-                <p>Boton copiar</p>
-            </section>
-        </section>
 
-        
+
+
+
+            <!--Lado Derecho-->
+            <section class="derecha">
+               <!-- <img src="imagenes/muneco.png" alt="No se encontro texto" class="imagenMuneco"> -->
+                <div id="cuadroImagen">
+                    <img src="imagenes/empty.png" id="imagenVacio">
+                </div>
+
+                <h1 id="tituloDerecha">No se encontro mensaje alguno</h1>
+
+                <textarea id="areaTextoDerecha" name="" id="" cols="20" rows="7" pattern="[a-z ]*"
+                oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')">Ingrese el texto que desea encriptar o desencriptar</textarea>
+
+               <!-- <textarea class="areaDeTextoDer" cols="20" rows="10"></textarea>
+                -->
+
+
+                <button id="boton-copiar" type="button" name="button" onclick="fnCopiar()">Copiar</button>
+                
+            </section>
+
+        </main>
 
         
 

@@ -1,62 +1,188 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    background: green;
-
-}
-
-fieldset{
-    border: none;
-}
-
-.app-space{
-    margin: auto;
-    width: 960px;
-    height: 650px;
-    padding: 5px;
-    background: blue;
-}
-
-.logo-contenedor{
-    width: 100%;
-    float: left;
-    background: red;
-    
-    
-}
-
-.lado-izq{
-    float: left;
-    width: 70%;
-    height: auto;
-    border-radius: 24px;
-    background: yellow;
-}
-
-.lado-der{
-    float: right;
-    width: 30%;
-    height: auto;
-    border-radius: 24px;
-    background: orange;
-}
-
-.botones-izq{
-    float: left;
-    width: 70%;
-    height: auto;
-    border-radius: 24px;
-    background: pink;
-}
 
 .imagen-logo{
-    margin-top: 2%;
-    float: inherit;
-    margin-left: 4%;
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 40px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.izquierda{
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background:#14213D;
+
+}
+/* Margin */
+/* Arriba | Derecha | Abajo | Izquierda */
+#areaDeTextoizq{
+    border: none;
+    color: #14213D;
+    
+    text-transform: lowercase;
+    width:95%;
+    height: auto;
+    margin: 90px 10px 10px 10px;
+    border-radius: 8px;
+    
+}
+
+::placeholder{ color: #14213D;}
+  .areaDeTextoizq:focus{
+        outline: none;
+    }
+
+/*
+.areaDeTextoDer {
+    background:white;
+    background-image: url("../imagenes/sin_encriptar.png");
+    background-repeat: no-repeat;
+    border:none;
+    border-radius: 24px;
+    color: #14213D;
+    margin-left: 150px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position:fixed;
+}
+.areaDeTextoDer:focus{
+    outline: none;
+}
+*/
+.botones-izq{
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.boton-encriptar{
+    margin: auto;
+    background-color: #00b4abe0;
+    border: 1px solid #00b4abe0;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.boton-desencriptar{
+    margin: auto;
+    background: #e45050;
+    border: 1px solid #e45050;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.derecha{
+    background: rgb(41, 121, 212);
+    border-radius: 20px;
+    float: right;
+    padding-bottom: 20px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-right: 40px;
+    
+}
+#boton-copiar{
+    border: 1px solid #14213D;
+    border-radius: 20px;
+    color: white;
+    background-color: #14213D;
+    cursor: pointer;
+    height: 30px;
+    line-height: normal;
+    margin-left: 50px;
+    margin-top: 10px;
+    position: relative;
+    width: 150px;
+    margin-bottom: 10px;
+    
+    
+    
+}
+
+/*
+.imagenMuneco{
+    margin-left: 2%;
+    margin-top: 20%;
+    width: 90%;
+    height: auto;
+
+}
+*/
+#cuadroImagen{
+    
+    width: 220px;
+    height: 150px;
+    background: white;
+    margin: auto;
+    margin-top: 20%;
+    border-radius: 100px;
+}
+#imagenVacio{
+    display: flex;
+    width: 55%;
+    height: auto;
+    vertical-align: 50px;
+    padding-top: 10%;
+    padding-left: 20%;
     
 }
 
 
-#textoIzq {
+#areaTextoDerecha{
+    float: left;
+    margin-left: 10%;
+    color: #14213D;
+    width: 80%;
+    height: 30%;
     border: none;
+    outline: none;
+    font-size: 15px;
+    background: white;
+    border-radius: 8px;
+    text-transform: lowercase;
+    margin-top: 30px;
+}
+
+::placeholder{ color: #14213D;}
+  .areaTextoDerecha:focus{
+        outline: none;
+    }
+
+
+.TC{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+/* Margin */
+/* Arriba | Derecha | Abajo | Izquierda */
+.derecha h1{
+    font-family: 'Roboto', sans-serif;
+    color:#14213D;
+    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    font-weight: bolder;
+}
+
+body{
+    background: rgb(202, 197, 228);
 }
