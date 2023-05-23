@@ -186,3 +186,15 @@ main{
 body{
     background: rgb(202, 197, 228);
 }
+
+
+/* Margin */
+/* Arriba | Derecha | Abajo | Izquierda */
+.footer-name{
+    font-family: 'Roboto', sans-serif;
+    color: #14213D;
+    font-size: 15px;
+    margin: auto;
+    font-weight:bold;
+    
+}
